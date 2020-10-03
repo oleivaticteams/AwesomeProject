@@ -3,7 +3,11 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import ComponentePrueba from "./ComponentePrueba";
 
+import { validarSesion } from "./src/Utils/Acciones";
+
 export default function App() {
+  validarSesion();
+
   return (
     <View style={styles.container}>
       <Text style={styles.texto}>Esta es mi primer app con React Native</Text>
