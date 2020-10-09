@@ -10,7 +10,7 @@ export default function AddProduct() {
   const onSubmit = () => {
     console.log("El nombre es " + nombre);
     console.log("La Descripción es " + descripcion);
-    console.log("El Precio es " + setprecio);
+    console.log("El Precio es " + precio);
   };
 
   return (
@@ -35,7 +35,7 @@ export default function AddProduct() {
           setprecio(text);
         }}
       />
-      <Button title="Agregar Producto" />
+      <Button title="Agregar Producto" onPress={onSubmit} />
     </View>
   );
 }
