@@ -4,18 +4,12 @@ import { StyleSheet, Text, View } from "react-native";
 import ComponentePrueba from "./ComponentePrueba";
 
 import { validarSesion } from "./src/Utils/Acciones";
+import AddProduct from "./src/Pantallas/AddProduct";
 
 export default function App() {
   validarSesion();
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.texto}>Esta es mi primer app con React Native</Text>
-      <Text style={styles.texto}>Otro texto</Text>
-      <ComponentePrueba />
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <AddProduct />;
 }
 
 const styles = StyleSheet.create({
